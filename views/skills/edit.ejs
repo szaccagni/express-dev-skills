@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+<form class="new-skill-form" action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+    <div>
+        <input type="hidden" name="id" value="<%= skill.id %>">
+        <label for="skill">Skill</label>
+        <input type="text" name="skill" value="<%= skill.skill %>">
+        <label for="level">Level (between 1 and 10)</label>
+        <input type="number" name="level" min="1" max="10" value="<%= skill.level %>">
+        <label for="description">Description</label>
+        <input type="text" name="description" value="<%= skill.description %>">
+    </div>
+    <button type="submit">Save skill</button>
+</form>
+<%- include('../partials/footer') %>
