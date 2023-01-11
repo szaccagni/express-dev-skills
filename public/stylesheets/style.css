@@ -7,6 +7,17 @@ a {
   color: #00B7FF;
 }
 
+form {
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -19,3 +30,8 @@ ul {
 .grey {
   color: grey;
 }
+
+.text-box {
+  height: 200px;
+}
+
