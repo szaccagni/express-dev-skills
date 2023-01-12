@@ -36,7 +36,6 @@ function deleteOne(id) {
 function updateOne(skillUpdated) {
     id = parseInt(skillUpdated.id)
     skillIdx = skills.findIndex(skill => skill.id === id) 
-    skills[skillIdx].id = id
     skills[skillIdx].skill = skillUpdated.skill
     skills[skillIdx].level = parseInt(skillUpdated.level)
     skills[skillIdx].description = skillUpdated.description
